@@ -148,11 +148,11 @@ MOBILE: DESKTOP FIRST
 }
 
 /********************
-STRATEGIG PLANNING
+STRATEGIC PLANNING
 *********************/
 .strategic-planning {
   background-color: var(--purple);
-  padding: 130px 0 60px 0;
+  padding: 130px 0px 60px 0;
 }
 .strategic-card,
 .strategic-app {
@@ -268,7 +268,7 @@ BENEFIT
   margin-bottom: 20px;
 }
 /********************
-MOBILE: DESKTOP FIRST
+TABLET: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 991px) {
   .benefit {
@@ -288,4 +288,71 @@ MOBILE: DESKTOP FIRST
     flex-basis: 100%;
     margin-bottom: 40px;
   }
+}
+
+/********************
+ABOUT US
+*********************/
+.about-us {
+  padding: 100px 0 110px 0;
+}
+.about-text,
+.about-photo {
+  border: 1px solid red;
+  flex-basis: calc(100% / 3 - 30px);
+}
+.about-text {
+  flex-grow: 1;
+  padding-right: 30px;
+}
+
+/********************
+TABLET: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 991px) {
+  .about-us {
+    padding: 100px 20px 110px 20px;
+  }
+}
+
+/********************
+MOBILE: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 575px) {
+  .about-us {
+    padding: 60px 20px;
+  }
+  .about-text,
+  .about-photo {
+    flex-basis: 100%;
+    margin: 0;
+  }
+  .about-photo {
+    margin-top: 30px;
+  }
+}
+
+/********************
+GET STARTED
+*********************/
+.get-started {
+  background-color: var(--purple);
+  padding: 60px 0;
+  text-align: center;
+  color: white;
+}
+
+/********************
+TABLET: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 991px) {
+  .get-started {
+    padding: 60px 20px;
+  }
+}
+
+/********************
+MOBILE: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 575px) {
 }
