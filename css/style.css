@@ -1,0 +1,111 @@
+/********************
+RESET AND GENERAL RULES
+*********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+:root {
+  --blu: #3484fd;
+  --lightblu: #b5ddff;
+  --purple: #9791e4;
+  --dark: #333333;
+  --yellow: #fcc160;
+}
+ol,
+ul,
+menu,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentcolor;
+}
+/********************
+SERVICE
+*********************/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.button {
+}
+
+.button-white {
+}
+/********************
+NAV BAR
+*********************/
+.main-header {
+  background-color: var(--blu);
+  padding: 19px 0;
+  color: white;
+}
+
+.nav-item a {
+  font-size: 14px;
+  padding: 0 16px;
+  line-height: 38px;
+}
+.main-header nav.row {
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+/********************
+TABLET: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 991px) {
+  .hamburger {
+    display: block;
+  }
+  .header-nav {
+    display: none;
+  }
+}
+
+/********************
+HERO
+*********************/
+.card {
+  background-color: var(--lightblu);
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 20px;
+  min-height: 200px;
+}
+.col-3 {
+  flex-basis: calc(100% / 3);
+}
+.col-2 {
+  flex-basis: calc(100% * (2 / 3));
+}
+/********************
+MOBILE: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 575px) {
+  .hero .col-2,
+  .hero .col-3 {
+    flex-basis: 100%;
+  }
+}
