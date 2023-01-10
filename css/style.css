@@ -356,3 +356,35 @@ MOBILE: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 575px) {
 }
+
+/********************
+FOOTER
+*********************/
+footer {
+  background-color: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer-decoration {
+  color: var(--purple);
+  text-decoration: underline;
+}
+.footer-end {
+  padding: 70px 0 10px 0;
+}
+
+/********************
+TABLET: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 991px) {
+  . {
+    padding: 40px 20px;
+  }
+}
+
+/********************
+MOBILE: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 575px) {
+}
