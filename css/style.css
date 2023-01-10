@@ -156,7 +156,7 @@ STRATEGIG PLANNING
 }
 .strategic-card,
 .strategic-app {
-  flex-basis: calc(100% / 2);
+  flex-basis: calc(100% / 2 - 10px);
   border: 1px solid red;
 }
 .strategic-app {
@@ -164,8 +164,8 @@ STRATEGIG PLANNING
   border-radius: 25px;
   margin-top: 170px;
 }
-.container-small .row {
-  row-gap: 40px;
+.strategic-card {
+  margin-right: 10px;
 }
 
 /********************
@@ -181,7 +181,7 @@ TABLET: DESKTOP FIRST
     border: 1px solid red;
   }
   .strategic-app {
-    margin-top: 0;
+    margin-top: 20px;
   }
 }
 
