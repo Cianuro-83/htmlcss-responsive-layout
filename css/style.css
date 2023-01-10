@@ -36,6 +36,10 @@ SERVICE
   max-width: 1140px;
   margin: 0 auto;
 }
+.container-small {
+  max-width: 880px;
+  margin: 0 auto;
+}
 
 .row {
   display: flex;
@@ -96,40 +100,38 @@ HERO
 *********************/
 
 .hero {
-  padding: 50px 20px 110px 20px;
+  padding: 50px 20px 55px 20px;
 }
-.hero .row{
+.hero .row {
   gap: 16px;
 }
 .card {
   background-color: var(--lightblu);
   border-radius: 20px;
-  
   padding: 20px;
 }
 .col-3 {
-  flex-basis: calc(100% / 3 - 32px/3);
-  
+  flex-basis: calc(100% / 3 - 32px / 3);
 }
 .col-2 {
-  flex-basis: calc(100% * (2 / 3) - 16px/2);
+  flex-basis: calc(100% * (2 / 3) - 16px / 2);
 }
-.card-text, 
-.card-img{
+.card-text,
+.card-img {
   border: 2px solid red;
   width: 10px;
-  flex-basis: calc(100%/2 - 2%);
+  flex-basis: calc(100% / 2 - 2%);
 }
 /********************
 TABLET: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 991px) {
-  .card-text, .card-img{
-  border: 2px solid red;
-  width: 10px;
-  flex-basis: 100%;
-}
-  
+  .card-text,
+  .card-img {
+    border: 2px solid red;
+    width: 10px;
+    flex-basis: 100%;
+  }
 }
 
 /********************
@@ -141,5 +143,53 @@ MOBILE: DESKTOP FIRST
     flex-basis: 100%;
   }
   .hero {
-    padding: 50px 20px 83px 20px;
+    padding: 50px 20px 45px 20px;
+  }
+}
+
+/********************
+STRATEGIG PLANNING
+*********************/
+.strategic-planning {
+  background-color: var(--purple);
+  padding: 130px 0 60px 0;
+}
+.strategic-card,
+.strategic-app {
+  flex-basis: calc(100% / 2);
+  border: 1px solid red;
+}
+.strategic-app {
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 170px;
+}
+.container-small .row {
+  row-gap: 40px;
+}
+
+/********************
+TABLET: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 991px) {
+  .strategic-planning {
+    padding: 60px 20px;
+  }
+  .strategic-card,
+  .strategic-app {
+    flex-basis: 100%;
+    border: 1px solid red;
+  }
+  .strategic-app {
+    margin-top: 0;
+  }
+}
+
+/********************
+MOBILE: DESKTOP FIRST
+*********************/
+@media screen and (max-width: 575px) {
+  .strategic-planning {
+    padding: 60px 20px;
+  }
 }
