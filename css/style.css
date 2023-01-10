@@ -46,9 +46,13 @@ SERVICE
 }
 
 .button {
+  border-radius: 25px;
+  line-height: 1em;
 }
 
 .button-white {
+  background-color: white;
+  color: black;
 }
 /********************
 NAV BAR
@@ -81,6 +85,9 @@ TABLET: DESKTOP FIRST
   }
   .header-nav {
     display: none;
+  }
+  .main-header {
+    padding: 19px 35px;
   }
 }
 
