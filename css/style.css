@@ -64,7 +64,7 @@ SERVICE
   line-height: 3em;
   width: 50%;
 }
-.button-circle{
+.button-circle {
   display: inline-block;
   background-color: var(--purple);
   border-radius: 100%;
@@ -117,27 +117,26 @@ HERO
 }
 .hero .row {
   gap: 16px;
-
 }
 .card-hero {
   background-color: var(--lightblu);
   border-radius: 20px;
   padding: 32px 24px;
   text-align: center;
-  
 }
-.icon-hero{
+.icon-hero {
   font-size: 4rem;
 }
-.title-hero{
+.title-hero {
   font-size: 1.5rem;
   padding-top: 34px;
   padding-bottom: 34px;
 }
-.description-hero p{
+.description-hero p {
   line-height: 1.7em;
 }
-.icon-hero, .title-hero{
+.icon-hero,
+.title-hero {
   color: var(--blu);
 }
 
@@ -152,25 +151,26 @@ HERO
   width: 10px;
   flex-basis: calc(100% / 2 - 2%);
 }
-.card-text .title-hero, .card-text .description-hero{
+.card-text .title-hero,
+.card-text .description-hero {
   text-align: left;
   padding: 0;
 }
-.card-text .description-hero{
+.card-text .description-hero {
   padding: 40px 0;
 }
-.card-img img{
+.card-img img {
   max-width: 240px;
   display: block;
   align-self: center;
 }
-.card-hero{
+.card-hero {
   padding-bottom: 0;
 }
-.button-blu{
+.button-blu {
   margin-bottom: 18px;
 }
-.card-hero .card-img{
+.card-hero .card-img {
   align-self: flex-end;
 }
 /********************
@@ -183,7 +183,7 @@ TABLET: DESKTOP FIRST
     flex-basis: 100%;
   }
 }
-.card-clean{
+.card-clean {
   height: 100%;
 }
 
@@ -222,26 +222,27 @@ STRATEGIC PLANNING
   margin-right: 10px;
 }
 
-.strategic-img,{
+.strategic-img {
   max-width: 70%;
   margin: 0 auto;
 }
-.strategic-app-img{
+.strategic-app-img {
   width: 80%;
   margin: 0 auto;
 }
-.strategic-title, .startegic-description{
+.strategic-title,
+.startegic-description {
   color: white;
 }
-.strategic-title{
+.strategic-title {
   padding-top: 130px;
   padding-bottom: 70px;
 }
 
-.strategic-app-title{
+.strategic-app-title {
   padding: 18px 0;
 }
-.strategic-app-description{
+.strategic-app-description {
   padding-bottom: 25px;
 }
 /********************
@@ -272,7 +273,7 @@ MOBILE: DESKTOP FIRST
     padding: 60px 20px;
   }
 }
-.strategic-img{
+.strategic-img {
   width: 100%;
   margin: 0 auto;
 }
@@ -444,6 +445,7 @@ MOBILE: DESKTOP FIRST
 @media screen and (max-width: 575px) {
   .get-maintext {
     font-size: 55px;
+  }
 }
 
 /********************
