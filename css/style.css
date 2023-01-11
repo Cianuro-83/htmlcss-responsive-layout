@@ -63,7 +63,13 @@ SERVICE
   color: white;
   line-height: 3em;
   width: 50%;
-
+}
+.button-circle{
+  display: inline-block;
+  background-color: var(--purple);
+  border-radius: 100%;
+  width: 50px;
+  line-height: 3em;
 }
 /********************
 NAV BAR
@@ -204,17 +210,40 @@ STRATEGIC PLANNING
 .strategic-card,
 .strategic-app {
   flex-basis: calc(100% / 2 - 10px);
-  border: 1px solid red;
 }
 .strategic-app {
   background-color: white;
   border-radius: 50px;
-  margin-top: 170px;
+  margin-top: 110px;
+  padding: 37px;
+  text-align: center;
 }
 .strategic-card {
   margin-right: 10px;
 }
 
+.strategic-img,{
+  max-width: 70%;
+  margin: 0 auto;
+}
+.strategic-app-img{
+  width: 80%;
+  margin: 0 auto;
+}
+.strategic-title, .startegic-description{
+  color: white;
+}
+.strategic-title{
+  padding-top: 130px;
+  padding-bottom: 70px;
+}
+
+.strategic-app-title{
+  padding: 18px 0;
+}
+.strategic-app-description{
+  padding-bottom: 25px;
+}
 /********************
 TABLET: DESKTOP FIRST
 *********************/
@@ -225,11 +254,14 @@ TABLET: DESKTOP FIRST
   .strategic-card,
   .strategic-app {
     flex-basis: 100%;
-    border: 1px solid red;
   }
   .strategic-app {
     margin-top: 20px;
   }
+}
+.strategic-img {
+  width: 90%;
+  margin: 0 auto;
 }
 
 /********************
@@ -240,7 +272,10 @@ MOBILE: DESKTOP FIRST
     padding: 60px 20px;
   }
 }
-
+.strategic-img{
+  width: 100%;
+  margin: 0 auto;
+}
 /********************
 TESTIMONIAL
 *********************/
