@@ -177,7 +177,9 @@ TABLET: DESKTOP FIRST
     flex-basis: 100%;
   }
 }
-
+.card-clean{
+  height: 100%;
+}
 
 /********************
 MOBILE: DESKTOP FIRST
