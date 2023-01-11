@@ -58,6 +58,13 @@ SERVICE
   background-color: white;
   color: black;
 }
+.button-blu {
+  background-color: var(--blu);
+  color: white;
+  line-height: 3em;
+  width: 50%;
+
+}
 /********************
 NAV BAR
 *********************/
@@ -104,12 +111,30 @@ HERO
 }
 .hero .row {
   gap: 16px;
+
 }
-.card {
+.card-hero {
   background-color: var(--lightblu);
   border-radius: 20px;
-  padding: 20px;
+  padding: 32px 24px;
+  text-align: center;
+  
 }
+.icon-hero{
+  font-size: 4rem;
+}
+.title-hero{
+  font-size: 1.5rem;
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+.description-hero p{
+  line-height: 1.7em;
+}
+.icon-hero, .title-hero{
+  color: var(--blu);
+}
+
 .col-3 {
   flex-basis: calc(100% / 3 - 32px / 3);
 }
@@ -118,9 +143,29 @@ HERO
 }
 .card-text,
 .card-img {
-  border: 2px solid red;
   width: 10px;
   flex-basis: calc(100% / 2 - 2%);
+}
+.card-text .title-hero, .card-text .description-hero{
+  text-align: left;
+  padding: 0;
+}
+.card-text .description-hero{
+  padding: 40px 0;
+}
+.card-img img{
+  max-width: 240px;
+  display: block;
+  align-self: center;
+}
+.card-hero{
+  padding-bottom: 0;
+}
+.button-blu{
+  margin-bottom: 18px;
+}
+.card-hero .card-img{
+  align-self: flex-end;
 }
 /********************
 TABLET: DESKTOP FIRST
@@ -128,11 +173,11 @@ TABLET: DESKTOP FIRST
 @media screen and (max-width: 991px) {
   .card-text,
   .card-img {
-    border: 2px solid red;
     width: 10px;
     flex-basis: 100%;
   }
 }
+
 
 /********************
 MOBILE: DESKTOP FIRST
@@ -161,7 +206,7 @@ STRATEGIC PLANNING
 }
 .strategic-app {
   background-color: white;
-  border-radius: 25px;
+  border-radius: 50px;
   margin-top: 170px;
 }
 .strategic-card {
@@ -341,6 +386,11 @@ GET STARTED
   text-align: center;
   color: white;
 }
+.get-maintext {
+  color: var(--yellow);
+  font-weight: 900;
+  font-size: 90px;
+}
 
 /********************
 TABLET: DESKTOP FIRST
@@ -355,6 +405,8 @@ TABLET: DESKTOP FIRST
 MOBILE: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 575px) {
+  .get-maintext {
+    font-size: 55px;
 }
 
 /********************
@@ -378,7 +430,7 @@ footer {
 TABLET: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 991px) {
-  . {
+  footer {
     padding: 40px 20px;
   }
 }
