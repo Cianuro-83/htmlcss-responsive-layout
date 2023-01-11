@@ -331,7 +331,7 @@ TESTIMONIAL
 }
 
 .testimonial-word {
-  flex-basis: 76%;
+  flex-basis: 80%;
   padding: 33px 0;
   color: white;
   line-height: 1.7em;
@@ -364,6 +364,15 @@ TABLET: DESKTOP FIRST
   .testimonial {
     padding: 65px 20px 110px 20px;
   }
+  .testimonial-word {
+    line-height: 1.7em;
+    font-size: 16px;
+  }
+  .testimonial-thumb img {
+    width: 30%;
+    align-self: center;
+    padding: 40px;
+  }
 }
 
 /********************
@@ -372,10 +381,16 @@ MOBILE: DESKTOP FIRST
 @media screen and (max-width: 575px) {
   .testimonial-word {
     text-align: center;
+    flex-basis: 100%;
+    padding: 25px;
+    line-height: 1.7em;
+    font-size: 16px;
   }
   .testimonial-thumb img {
-    width: 400px;
+    width: 100%;
     align-self: center;
+    flex-basis: 100%;
+    padding: 40px;
   }
 }
 
