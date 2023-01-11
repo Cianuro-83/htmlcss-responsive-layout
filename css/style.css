@@ -78,6 +78,14 @@ SERVICE
   line-height: 2em;
   width: 30%;
 }
+.button-viola-big {
+  background-color: var(--purple);
+  color: white;
+  line-height: 3em;
+  width: 85%;
+  padding: 0 5px;
+  font-size: auto;
+}
 /********************
 NAV BAR
 *********************/
@@ -170,6 +178,7 @@ HERO
   max-width: 240px;
   display: block;
   align-self: center;
+  margin: 0 auto;
 }
 .card-hero {
   padding-bottom: 0;
@@ -189,9 +198,12 @@ TABLET: DESKTOP FIRST
     width: 10px;
     flex-basis: 100%;
   }
-}
-.card-clean {
-  height: 100%;
+  .card-clean {
+    height: 100%;
+  }
+  .card-img img {
+    margin: 0;
+  }
 }
 
 /********************
@@ -204,6 +216,9 @@ MOBILE: DESKTOP FIRST
   }
   .hero {
     padding: 50px 20px 45px 20px;
+  }
+  .card-img img {
+    margin: 0 auto;
   }
 }
 
@@ -282,6 +297,7 @@ MOBILE: DESKTOP FIRST
 }
 .strategic-img {
   width: 100%;
+  display: block;
   margin: 0 auto;
 }
 /********************
@@ -436,20 +452,62 @@ ABOUT US
 }
 .about-text,
 .about-photo {
-  border: 1px solid red;
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc(70% / 3 - 30px);
 }
 .about-text {
   flex-grow: 1;
   padding-right: 30px;
 }
-
+.about-title {
+  color: var(--purple);
+  font-weight: 900;
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+.about-description,
+.about-speach {
+  color: #9b9b9b;
+  line-height: 1.7em;
+}
+.about-speach {
+  padding-top: 50px;
+}
+.about-photo .thumb {
+  border-radius: 100%;
+  width: 100%;
+}
+.quote {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  z-index: 999;
+  font-size: 60px;
+  color: var(--purple);
+}
+.about-photo {
+  text-align: center;
+  position: relative;
+}
+.about-quote {
+  text-align: left;
+  color: var(--purple);
+  font-weight: 900;
+  padding: 25px 0;
+}
 /********************
 TABLET: DESKTOP FIRST
 *********************/
 @media screen and (max-width: 991px) {
   .about-us {
     padding: 100px 20px 110px 20px;
+  }
+  .about-photo .thumb {
+    width: 80%;
+  }
+  .quote {
+    top: 1px;
+    right: 5px;
+    font-size: 40px;
   }
 }
 
@@ -468,6 +526,11 @@ MOBILE: DESKTOP FIRST
   .about-photo {
     margin-top: 30px;
   }
+  .quote {
+    top: 1px;
+    right: 50px;
+    font-size: 90px;
+  }
 }
 
 /********************
@@ -483,6 +546,38 @@ GET STARTED
   color: var(--yellow);
   font-weight: 900;
   font-size: 90px;
+}
+.get-incipit {
+  font-weight: lighter;
+  font-size: 10px;
+}
+.get-title {
+  padding-top: 25px;
+  padding-bottom: 50px;
+  font-weight: 900;
+  font-size: 25px;
+}
+.get-description {
+  padding: 30px 0;
+  font-size: 10px;
+  line-height: 1.7em;
+}
+.get-started .button-white {
+  color: var(--purple);
+  display: block;
+  width: 15%;
+  line-height: 3em;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.copyright {
+  font-size: 10px;
+}
+.copyright i {
+  font-size: 5px;
+  display: inline-block;
+  line-height: 5em;
 }
 
 /********************
